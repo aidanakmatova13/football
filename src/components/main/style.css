@@ -1,0 +1,11 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.main{
+    text-align: center;
+}
+.box{
+    border: 1px solid black;
+}
