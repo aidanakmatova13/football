@@ -25,7 +25,7 @@ const Main = () => {
             <div className='top'>
                 <h1 className='menu-title'>РАСПИСАНИЕ МАТЧЕЙ ПО ФУТБОЛУ</h1>
                 <input className='search-input' onChange={handleInput} type='text' placeholder='type...'/>
-                <button onClick={Search}>Search &#8634; </button>
+                <button  className="search-button" onClick={Search}>Search &#8634; </button>
             </div>
 
             <GameList infos={infos}/>
