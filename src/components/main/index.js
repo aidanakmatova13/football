@@ -9,7 +9,7 @@ const Main = () => {
     const [searchGame, setSearchGame] = useState('')
     let navigate = useNavigate()
     useEffect(() => {
-        axios("https://footballista.ru/api/seasons/5099/calendar_paginated?limit=10&offset=0")
+        axios("https://footballista.ru/api/seasons/5099/calendar_paginated?limit=94&offset=0")
             .then(({data}) => setInfos(data.items))
     }, [])
     const handleInput = (e) => {
@@ -29,6 +29,8 @@ const Main = () => {
             </div>
 
             <GameList infos={infos}/>
+            <button type="magic" count="2" hide-if-last="true" libs="no-thanks">Показать еще</button>
+
         </main>
     );
 };

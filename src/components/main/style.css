@@ -6,7 +6,9 @@
 }
 .main{
     text-align: center;
+    padding: 30px;
 }
 .box{
     border: 1px solid black;
+    padding: 10px;
 }
